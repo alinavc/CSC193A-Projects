@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fancify Shamcify</title>
+		<script type="text/javascript" src="fancifymytext.js"></script>
+	</head>
+
+	<body>
+		<h1 style="text-align: center"><u>Fancify my Text</u></h1>
+
+		<fieldset style="border-color: pink;
+						border-radius: 5px;
+						padding: 10px;
+						border-width: 10px;">
+			<legend><b>Text</b></legend>
+			<textarea id='textbox' cols="30" rows="4" placeholder="Begin typing to Fancify..."></textarea>
+		</fieldset>
+		<fieldset style="border-color: darkgreen;
+						border-radius: 5px;
+						padding: 10px;
+						border-width: 10px;">
+			<legend><b>Fancify</b></legend>
+				<button id="biggerButton" style="border-radius: 5px;
+											background-color: turquoise;
+											border-color: darkcyan;
+											color: aliceblue;
+											font-size: 20px;
+											padding: 5px;" 
+							onclick="buttonClicked()">Bigger!</button>
+
+				<button id="mooButton" style="border-radius: 5px;
+									background-color: firebrick;
+										border-color: darkred;
+										color: aliceblue;
+										font-size: 20px;
+										padding: 5px;" 
+							onclick="mooClicked()">Moo</button>
+
+				<input type="radio" name="wordEnhancer" onchange="fancyClicked()">FancyShmancy
+				<input type="radio" name="wordEnhancer" onchange="boringClicked()" checked>BoringBetty
+		</fieldset>
+		
+	</body>
+</html>
